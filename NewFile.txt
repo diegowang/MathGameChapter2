@@ -1,2 +1,1 @@
-Added some new text to newfile
-Text has been modified
+This file has not to be removed
