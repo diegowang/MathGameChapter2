@@ -138,4 +138,17 @@ or TextView class and base as well as link our new objects directly to the appro
         textObjectScore.setText("Score: " + currentScore);
         textObjectLevel.setText("Level: " + currentLevel);
     }
+
+    boolean isCorrect(int answerGiven){
+        boolean correctTrueOrFalse;
+        if(answerGiven == correctAnswer){//YAY!
+            Toast.makeText(getApplicationContext(), "Well done!", Toast.LENGTH_LONG).show();
+            correctTrueOrFalse=true;
+        }else{//Uh-oh!
+            Toast.makeText(getApplicationContext(), "Sorry", Toast.LENGTH_LONG).show();
+            correctTrueOrFalse=false;
+        }
+
+        return correctTrueOrFalse;
+    }
 }
