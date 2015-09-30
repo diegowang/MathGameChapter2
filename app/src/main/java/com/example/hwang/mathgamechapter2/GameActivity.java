@@ -58,31 +58,17 @@ or TextView class and base as well as link our new objects directly to the appro
                 //initialize a new int with the value contained in buttonObjectChoice1
                 //Remember we put it there ourselves previously
                 answerGiven = Integer.parseInt("" + buttonObjectChoice1.getText());
-                //is it the right answer?
-                if(answerGiven==correctAnswer) {//yay it's the right answer
-                    Toast.makeText(getApplicationContext(), "Well done!", Toast.LENGTH_LONG).show();
-                }else{//uh oh!
-                    Toast.makeText(getApplicationContext(),"Sorry that's wrong", Toast.LENGTH_LONG).show();
-                }
                 break;
             case R.id.buttonChoice2:
                 //same as previous case but using the next button
                 answerGiven = Integer.parseInt("" + buttonObjectChoice2.getText());
-                if(answerGiven==correctAnswer) {
-                    Toast.makeText(getApplicationContext(), "Well done!", Toast.LENGTH_LONG).show();
-                }else{
-                    Toast.makeText(getApplicationContext(),"Sorry that's wrong", Toast.LENGTH_LONG).show();
-                }
+
                 break;
 
             case R.id.buttonChoice3:
                 //same as previous case but using the next button
                 answerGiven = Integer.parseInt("" + buttonObjectChoice3.getText());
-                if(answerGiven==correctAnswer) {
-                    Toast.makeText(getApplicationContext(), "Well done!", Toast.LENGTH_LONG).show();
-                }else{
-                    Toast.makeText(getApplicationContext(),"Sorry that's wrong", Toast.LENGTH_LONG).show();
-                }
+                
                 break;
 
         }
