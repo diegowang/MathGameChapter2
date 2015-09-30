@@ -79,4 +79,25 @@
         android:layout_alignTop="@+id/buttonChoice2"
         android:layout_toLeftOf="@+id/textPartB"
         android:layout_toStartOf="@+id/textPartB" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="999"
+        android:id="@+id/textScore"
+        android:layout_marginBottom="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/buttonChoice1"
+        android:layout_toEndOf="@+id/buttonChoice1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Level:4"
+        android:id="@+id/textLevel"
+        android:layout_alignTop="@+id/textScore"
+        android:layout_toRightOf="@+id/buttonChoice2"
+        android:layout_toEndOf="@+id/buttonChoice2" />
 </RelativeLayout>
