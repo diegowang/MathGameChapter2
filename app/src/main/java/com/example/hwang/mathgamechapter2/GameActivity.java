@@ -47,6 +47,8 @@ or TextView class and base as well as link our new objects directly to the appro
         buttonObjectChoice1.setOnClickListener(this);
         buttonObjectChoice2.setOnClickListener(this);
         buttonObjectChoice3.setOnClickListener(this);
+
+        setQuestion();
     }
 
 
@@ -74,6 +76,8 @@ or TextView class and base as well as link our new objects directly to the appro
                 break;
 
         }
+        updateScoreAndLevel(answerGiven);
+        setQuestion();
     }
 
     void setQuestion() {
