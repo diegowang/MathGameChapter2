@@ -24,7 +24,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="23dp"
         android:layout_alignParentStart="false"
-        android:src="@mipmap/Koala" />
+        android:src="@mipmap/koala" />
 
     <Button
         android:layout_width="wrap_content"
