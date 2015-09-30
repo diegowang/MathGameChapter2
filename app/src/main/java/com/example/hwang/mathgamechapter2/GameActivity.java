@@ -121,4 +121,21 @@ or TextView class and base as well as link our new objects directly to the appro
                 break;
         }
     }
+
+    void updateScoreAndLevel(int answerGiven){
+        if(isCorrect(answerGiven)){
+            for(int i = 1; i <= currentLevel; i++){
+                currentScore = currentScore + i;
+            }
+
+            currentLevel++;
+        }else{
+            currentScore = 0;
+            currentLevel = 1;
+        }
+
+        //Actually update the two TextViews
+        textObjectScore.setText("Score: " + currentScore);
+        textObjectLevel.setText("Level: " + currentLevel);
+    }
 }
