@@ -14,43 +14,33 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     Button buttonObjectChoice1;
     Button buttonObjectChoice2;
     Button buttonObjectChoice3;
+    TextView textObjectPartA;
+    TextView textObjectPartB;
+    TextView textObjectScore;
+    TextView textObjectLevel;
+
+    int currentScore = 0;
+    int currentLevel = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
 
-        //Here we initialize all our variables
-        int partA = 9;
-        int partB = 9;
-        correctAnswer = partA * partB;
-        int wrongAnswer1 = correctAnswer - 1;
-        int wrongAnswer2 = correctAnswer + 1;
 
         /*Here we get a working object based on either the button
 or TextView class and base as well as link our new objects directly to the appropriate UI elements that we created previously*/
 
-        TextView textObjectPartA = (TextView)findViewById(R.id.textPartA);
+        textObjectPartA = (TextView)findViewById(R.id.textPartA);
+        textObjectPartB = (TextView)findViewById(R.id.textPartB);
 
-        TextView textObjectPartB = (TextView)findViewById(R.id.textPartB);
+        textObjectScore = (TextView)findViewById(R.id.textScore);
+        textObjectLevel = (TextView)findViewById(R.id.textLevel);
 
         buttonObjectChoice1 = (Button)findViewById(R.id.buttonChoice1);
         buttonObjectChoice2 = (Button)findViewById(R.id.buttonChoice2);
         buttonObjectChoice3 = (Button)findViewById(R.id.buttonChoice3);
 
-        //Now we use the setText method of the class on our objects
-//to show our variable values on the UI elements.
-//Just like when we output to the console in the exercise -
-//Expressions in Java, only now we use setText method
-//to put the values in our variables onto the actual UI.
-        textObjectPartA.setText("" + partA);
-        textObjectPartB.setText("" + partB);
-
-//which button receives which answer, at this stage is arbitrary.
-
-        buttonObjectChoice1.setText("" + correctAnswer);
-        buttonObjectChoice2.setText("" + wrongAnswer1);
-        buttonObjectChoice3.setText("" + wrongAnswer2);
 
         buttonObjectChoice1.setOnClickListener(this);
         buttonObjectChoice2.setOnClickListener(this);
