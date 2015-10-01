@@ -146,10 +146,10 @@ or TextView class and base as well as link our new objects directly to the appro
     boolean isCorrect(int answerGiven){
         boolean correctTrueOrFalse;
         if(answerGiven == correctAnswer){//YAY!
-            Toast.makeText(getApplicationContext(), "Well done!", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Well done!", Toast.LENGTH_SHORT).show();
             correctTrueOrFalse=true;
         }else{//Uh-oh!
-            Toast.makeText(getApplicationContext(), "Sorry", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Sorry", Toast.LENGTH_SHORT).show();
             correctTrueOrFalse=false;
         }
 
